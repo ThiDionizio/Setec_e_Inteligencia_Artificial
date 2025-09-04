@@ -99,30 +99,6 @@ body {
     text-align: justify;
 }
 
-.tech-button {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
-}
-
-.tech-button:hover {
-    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.4);
-}
-
-.tech-button:active {
-    transform: translateY(0);
-}
 
 /* Responsividade */
 @media (max-width: 768px) {
