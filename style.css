@@ -11,13 +11,22 @@ body {
     line-height: 1.6;
     padding: 20px;
     min-height: 100vh;
+    /* REMOVI as propriedades flex que estavam causando o problema */
+}
+
+/* Container principal para as seções */
+.main-container {
+    display: flex;
+    flex-direction: column; /* Isso garante que as seções fiquem empilhadas */
+    gap: 40px; /* Espaço entre as seções */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Estilos para a primeira seção */
 .tech-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
+    width: 100%;
     padding: 30px;
     background: rgba(15, 23, 42, 0.8);
     border-radius: 15px;
@@ -70,9 +79,7 @@ body {
 
 /* Estilos para a seção de vídeos (que deve ficar abaixo) */
 .videos-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
+    width: 100%;
     padding: 30px;
     background: rgba(15, 23, 42, 0.8);
     border-radius: 15px;
