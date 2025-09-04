@@ -99,6 +99,110 @@ body {
     text-align: justify;
 }
 
+.tech-button {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+}
+
+.tech-button:hover {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.4);
+}
+
+.tech-button:active {
+    transform: translateY(0);
+}
+
+/* Nova seção de vídeos */
+.videos-section {
+    max-width: 1200px;
+    width: 90%;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(66, 153, 225, 0.3);
+}
+
+.video-item {
+    margin-bottom: 60px;
+}
+
+.video-item:last-child {
+    margin-bottom: 0;
+}
+
+.video-subtitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8rem;
+    color: #7dd3fc;
+    margin-bottom: 25px;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(125, 211, 252, 0.4);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.video-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 2px;
+    background: linear-gradient(90deg, #7dd3fc, #38bdf8);
+    border-radius: 2px;
+}
+
+.video-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.video-container {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    display: block;
+    border: none;
+}
+
+.video-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 15px;
+}
+
+.video-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -112,5 +216,17 @@ body {
     
     .image-container, .text-container {
         min-width: 100%;
+    }
+    
+    .video-content {
+        flex-direction: column;
+    }
+    
+    .video-container, .video-text {
+        min-width: 100%;
+    }
+    
+    .video-subtitle {
+        font-size: 1.5rem;
     }
 }
