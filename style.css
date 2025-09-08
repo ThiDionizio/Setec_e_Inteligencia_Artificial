@@ -9,8 +9,11 @@ body {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: #e2e8f0;
     line-height: 1.6;
-    padding: 20px;
+    padding: 40px 20px;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Container principal para as seções */
@@ -20,11 +23,10 @@ body {
     gap: 40px;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
 }
 
-/* Estilos para a primeira seção */
-.tech-section {
+/* Estilos para todas as seções - AGORA COM A MESMA LARGURA */
+.tech-section, .videos-section, .final-section {
     width: 100%;
     padding: 30px;
     background: rgba(15, 23, 42, 0.8);
@@ -71,8 +73,6 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: auto;
 }
 
 .text-container p {
@@ -87,15 +87,6 @@ body {
 }
 
 /* Estilos para a seção de vídeos */
-.videos-section {
-    width: 100%;
-    padding: 30px;
-    background: rgba(15, 23, 42, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(66, 153, 225, 0.3);
-}
-
 .video-item {
     margin-bottom: 60px;
 }
@@ -137,8 +128,6 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: auto;
 }
 
 .video-text p {
@@ -152,15 +141,6 @@ body {
 }
 
 /* Estilos para a seção final */
-.final-section {
-    width: 100%;
-    padding: 30px;
-    background: rgba(15, 23, 42, 0.8);
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(66, 153, 225, 0.3);
-}
-
 .final-content {
     display: flex;
     flex-direction: column;
@@ -276,6 +256,10 @@ body {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+    }
+    
     .content-wrapper, .video-content {
         flex-direction: column;
     }
@@ -303,5 +287,9 @@ body {
     .tech-button {
         padding: 14px 28px;
         font-size: 0.9rem;
+    }
+    
+    .video-item {
+        margin-bottom: 40px;
     }
 }
