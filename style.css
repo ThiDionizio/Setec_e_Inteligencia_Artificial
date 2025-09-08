@@ -203,3 +203,45 @@ body {
         padding: 0 10px;
     }
 }
+
+/* Estilos para os botões de navegação */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.nav-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+    color: white;
+    padding: 12px 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.4);
+}
+
+.nav-button:active {
+    transform: translateY(0);
+}
+
+/* Responsividade para botões */
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
